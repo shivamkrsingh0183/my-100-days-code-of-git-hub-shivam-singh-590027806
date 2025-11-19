@@ -6,19 +6,19 @@
 
 int main(){
     int n;
-    int sum=0;
+    float sum=0;
     printf("enter n upto which sum of series is required: \n");
     scanf("%d",&n);
 
 
     for(int i=1;i<=n;i++){
-        sum+=2*i/((4*i)-1);
+        sum+=(float)2*i/(4*i-1);
 
-        printf("sum upto n term is %d \n ",sum);
+        printf("sum upto n term is %.2f \n ",sum);
     }
 
 return 0;
-}
+ }
 
 //QUESTION2:Write a program to print the following pattern:
 // *****
