@@ -39,4 +39,34 @@
 // }
     
     
-//QUESTION2:
+//QUESTION2:Write a program to input
+// a character and check whether it is an uppercase alphabet, lowercase alphabet, digit, or special character.
+int main(){
+    char ch;
+    printf("enter character to check");
+    scanf("%c",&ch);
+
+    
+    
+
+    if(ch>='a' && ch<= 'z'){
+        printf("%c is a lowercase alphabet",ch);
+    }
+
+
+
+   if(ch>='A'&& ch<='Z'){
+    printf("%c is a uppercase alphabet");
+
+    }
+    if(ch=='&'|| ch=='@'||  ch=='!'||  ch=='%'||  ch=='*'){
+        printf("%c is a special character");
+    }
+
+ if(ch>='0' && ch<='9'){
+  printf("%c is a digit");
+ }
+return 0;
+}
+
+
