@@ -20,6 +20,19 @@
 //QUESTION2:Toggle case of each character in a string.
 int main(){
     char s[]="Hello";
-    
-
+    int n=strlen(s);
+    printf("length of the string is:%d\n",n);
+    for(int i=0;i<n;i++){
+        if(s[i]>='a' && s[i]<='z'){
+            s[i]=(int)s[i]-32;
+        }
+        else if(s[i]>='A' && s[i]<='Z'){
+            s[i]=(int)s[i]+32;
+        }
+        else{
+            printf("not a string any other character\n");
+        }
+        printf("%c\n",s[i]);
+    }
+    return 0;
 }
