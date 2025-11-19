@@ -23,17 +23,13 @@
 
 // int main(){
 //     int n=1234;
-//     int reverse=1;
+//     int reverse=0;
 
-
+//     while(n!=0){
 //     int digit=n%10;
 //     reverse=(reverse*10)+digit;
 //     n=n/10;
-
-
+//     }
 //     printf("%d",reverse);
-   
-
-
 //     return 0;
 // }
