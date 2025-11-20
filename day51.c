@@ -6,7 +6,7 @@
 //You need to print the first and last occurrence of the target
  //and print the index of first and last occurrence.
  // Print -1, -1 if the target is not present.
- int main(){
+  int main(){
     int nums[5];
     int target=11;
     for(int i=0;i<5;i++){
@@ -24,11 +24,13 @@ for(int i=0;i<5;i++){
 }
 
 for(int i=0;i<5;i++){
-     for(int j=0;j=i+1;j++){
-        if(nums[i]==nums[j]){
-            printf("%d\n",i);
-        }
-     }
+    if(nums[i]==target){
+        printf("element is present in the index at :%d\n",i);
+        
+    }
+    else{
+        printf("target is not present in the array(-1)\n");
+    }
 }
  return 0;
 }
