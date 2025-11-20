@@ -15,34 +15,36 @@ int main(){
         printf("%d\n",arr[i]);
         
     }
+    int found;
    for(int i=0;i<4;i++){
     if(arr[i]>arr[i+1]){
-        printf("invalid output,not a sorted array\n");
+        found=0;
     }
     else{
-        printf("array is sorted");
+        found=1;
+    }
+//break;
 
-break;    }
+}
+if(found){
+    printf("array is sorted\n");
+}
+else{
+    printf("array is not sorted");
 }
 
 printf("\n");
    for(int i=0;i<5;i++){
     if(arr[i]>=x){
-    printf("%d\n",i);
+    printf(" element at index:%dis greater than or equal to x\n",i);
    
     break;
     }
-    else if(arr[i]<x){
+    else {
         printf("-1\n");
     }
-        
-    else{
-        printf("can't be predicted");
-    }
-   }
-
-
+}  
+    
     
     return 0;
-    
-}
+} 
